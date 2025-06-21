@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.css" />
+</head>
+<body>
+    <div id="game-container">
+        <!-- Left Side: Game interface -->
+        <div id="game-ui">
+            <h1>Rock, Paper, Scissors</h1>
+            <h2>Countdown: <b id="countdown" style="color: blue;">15</b> sec</h2>
+            <div id="confuse-them" style="margin: 1rem;">
+                <i class="fa-solid fa-hand-back-fist" style="font-size: 100px;"></i>
+            </div>
+            <button id="play-btn">Play</button>
+            <button id="stop-btn">Stop</button>
+
+            <div id="make-choice" style="margin-top: 1rem; display: none;">
+                <h3>I choose:</h3>
+                <button id="btn-rock">Rock</button>
+                <button id="btn-paper">Paper</button>
+                <button id="btn-scissors">Scissors</button>
+            </div>
+
+            <div id="result-message"></div>
+        </div>
+
+        <!-- Right Side: Results table -->
+        <div id="results-panel">
+            <h3>Recent Round Results</h3>
+            <table id="results-table">
+                <thead>
+                    <tr>
+                        <th>Round</th>
+                        <th>Player's Move</th>
+                        <th>Outcome</th>
+                    </tr>
+                </thead>
+                <tbody id="results-body"></tbody>
+            </table>
+            <div id="total-scores">
+                Player: <span id="player-score">0</span> | Computer: <span id="computer-score">0</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/game.js"></script>
+</body>
+</html>
