@@ -23,4 +23,4 @@ Includes a **scoreboard**, **animated countdown timer**, **dynamic event handlin
 ### 📜 Installation
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/rock-paper-scissors-game.git
+   https://github.com/EvaArbo/Rock-Paper-Scissors
